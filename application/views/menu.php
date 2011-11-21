@@ -9,6 +9,9 @@
 <body>
 <h2>親交会会計管理</h2>
 <hr>
-親交会の会計管理システム
+<ul>
+<li><a href="/shinkoukai/shiwake/">仕訳</a></li>
+<li>帳票</li>
+</ul>
 </body>
 </html>
