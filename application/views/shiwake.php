@@ -14,37 +14,49 @@
 echo form_open("shiwake/save/");
 
 echo form_input(array(
-         "name" => "year",
+         "name" => "syear",
          "maxlength" => "6",
          "size" => "6",
          ));
-echo ('年');
+echo ("年");
 
 echo form_input(array(
-         "name" => "month",
+         "name" => "smonth",
          "maxlength" => "6",
          "size" => "6",
          ));
-echo ('月');
+echo ("月");
 
 echo form_input(array(
-         "name" => "day",
+         "name" => "sday",
          "maxlength" => "6",
          "size" => "6",
          ));
-echo ('日');
+echo ("日");
 
 echo ("<br>\n");
 
-echo ('借方科目');
-echo form_input('karikata');
-echo ('貸方科目');
-echo form_input('kashikata');
-echo ('金額');
-echo form_input('kingaku');
+echo ("借方科目");
+echo form_input(array(
+         "name"      => "karikata",
+         "maxlength" => "40",
+         "size"      => "40"
+         ));
+echo ("貸方科目");
+echo form_input(array(
+         "name"      => "kashikata",
+         "maxlength" => "40",
+         "size"      => "40",
+         ));
+echo ("金額");
+echo form_input(array(
+         "name"      => "kingaku",
+         "maxlength" => "20",
+         "size"      => "20",
+         ));
 
 echo ("<br>\n");
-echo form_submit('submit', '保存');
+echo form_submit("submit", "保存");
 
 echo form_close();
 
@@ -64,6 +76,10 @@ echo ("<td>2011-11-21</td><td>親交会貸付</td><td>普通預金</td><td>100,0
 echo ("</tr>\n");
 echo ("</tbody>\n");
 echo ("</table>\n");
+
+echo ("<br><hr>\n");
+
+echo anchor(base_url(), 'メニュー', 'title="トップに戻る"');
 ?>
 </body>
 </html>

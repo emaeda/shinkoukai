@@ -44,24 +44,24 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'dbver000';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['dbver000']['hostname'] = '';
+$db['dbver000']['username'] = '';
+$db['dbver000']['password'] = '';
+$db['dbver000']['database'] = '';
+$db['dbver000']['dbdriver'] = 'shinkoukai.sqlite';
+$db['dbver000']['dbprefix'] = '';
+$db['dbver000']['pconnect'] = TRUE;
+$db['dbver000']['db_debug'] = TRUE;
+$db['dbver000']['cache_on'] = FALSE;
+$db['dbver000']['cachedir'] = '';
+$db['dbver000']['char_set'] = 'utf8';
+$db['dbver000']['dbcollat'] = 'utf8_general_ci';
+$db['dbver000']['swap_pre'] = '';
+$db['dbver000']['autoinit'] = TRUE;
+$db['dbver000']['stricton'] = FALSE;
 
 
 /* End of file database.php */
